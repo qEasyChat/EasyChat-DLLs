@@ -159,11 +159,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="DB_Driver.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DB_Driver.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="Utils.cpp" />
