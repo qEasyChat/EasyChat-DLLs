@@ -9,7 +9,7 @@
 #endif
 
 
-class DB_Driver
+class DB_DRIVER_API DB_Driver
 {
 public:
 	virtual bool check_authentification(std::string username, std::string password_hash) = 0;
