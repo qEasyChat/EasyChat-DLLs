@@ -1,0 +1,3 @@
+﻿DELETE
+FROM User 
+WHERE username = "USERNAME";

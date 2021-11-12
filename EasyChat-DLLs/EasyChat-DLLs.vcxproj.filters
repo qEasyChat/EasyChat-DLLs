@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="SQL">
+      <UniqueIdentifier>{14f0daef-75f4-4149-b39f-637acfea9fbc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Utils.h">
@@ -41,5 +44,31 @@
     <ClCompile Include="DB_Driver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SQL\check-authentification.sql">
+      <Filter>SQL</Filter>
+    </None>
+    <None Include="SQL\create-authentification-table.sql">
+      <Filter>SQL</Filter>
+    </None>
+    <None Include="SQL\create-user-table.sql">
+      <Filter>SQL</Filter>
+    </None>
+    <None Include="SQL\delete-user.sql">
+      <Filter>SQL</Filter>
+    </None>
+    <None Include="SQL\get-user.sql">
+      <Filter>SQL</Filter>
+    </None>
+    <None Include="SQL\insert-authentification-entry.sql">
+      <Filter>SQL</Filter>
+    </None>
+    <None Include="SQL\insert-new-user.sql">
+      <Filter>SQL</Filter>
+    </None>
+    <None Include="SQL\modify-user.sql">
+      <Filter>SQL</Filter>
+    </None>
   </ItemGroup>
 </Project>

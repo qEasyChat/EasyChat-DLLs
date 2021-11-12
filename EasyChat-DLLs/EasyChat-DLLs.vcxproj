@@ -170,6 +170,16 @@
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="Utils.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="SQL\check-authentification.sql" />
+    <None Include="SQL\create-authentification-table.sql" />
+    <None Include="SQL\create-user-table.sql" />
+    <None Include="SQL\delete-user.sql" />
+    <None Include="SQL\get-user.sql" />
+    <None Include="SQL\insert-authentification-entry.sql" />
+    <None Include="SQL\insert-new-user.sql" />
+    <None Include="SQL\modify-user.sql" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
