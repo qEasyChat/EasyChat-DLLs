@@ -166,6 +166,7 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="SimpleIni.h" />
+    <ClInclude Include="SimpleIni_Manager.h" />
     <ClInclude Include="SQLite_Manager.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="Utils.h" />
@@ -177,6 +178,7 @@
     <ClCompile Include="DB_Driver.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="SimpleIni_Manager.cpp" />
     <ClCompile Include="sqlite3.c" />
     <ClCompile Include="SQLite_Manager.cpp" />
     <ClCompile Include="User.cpp" />

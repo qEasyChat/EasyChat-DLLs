@@ -48,6 +48,9 @@
     <ClInclude Include="SimpleIni.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SimpleIni_Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Utils.cpp">
@@ -78,6 +81,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ConvertUTF.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleIni_Manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
