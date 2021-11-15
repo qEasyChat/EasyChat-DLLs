@@ -4,7 +4,7 @@
 #ifdef USER_EXPORTS
 #define USER_API __declspec(dllexport)
 #else
-#define USER_API __declspec(dllimport)
+#define USER_API __declspec(dllexport)
 #endif
 
 class USER_API User
