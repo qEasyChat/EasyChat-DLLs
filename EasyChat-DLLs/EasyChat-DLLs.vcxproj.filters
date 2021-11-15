@@ -88,5 +88,6 @@
     <None Include="SQL\modify-user.sql">
       <Filter>SQL</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
