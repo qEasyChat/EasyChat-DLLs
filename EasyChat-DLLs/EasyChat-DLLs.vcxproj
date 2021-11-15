@@ -160,16 +160,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Connection.h" />
+    <ClInclude Include="ConvertUTF.h" />
     <ClInclude Include="Crypto_Manager.h" />
     <ClInclude Include="DB_Driver.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="SimpleIni.h" />
     <ClInclude Include="SQLite_Manager.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Connection.cpp" />
+    <ClCompile Include="ConvertUTF.c" />
     <ClCompile Include="Crypto_Manager.cpp" />
     <ClCompile Include="DB_Driver.cpp" />
     <ClCompile Include="dllmain.cpp" />
