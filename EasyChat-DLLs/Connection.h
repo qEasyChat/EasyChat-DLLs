@@ -17,6 +17,22 @@
 #define SIZE_BYTES 10
 
 
+class Client_Down_Exception : public std::exception {
+    virtual const char* what() const throw() {
+        return "Client down";
+    }
+};
+
+class Bad_Socket_Exception : public std::exception {
+    virtual const char* what() const throw() {
+        return "Bad socket";
+    }
+};
+class Socket_Error_Exception : public std::exception {
+    virtual const char* what() const throw() {
+        return "Unknown socket error";
+    }
+};
 
 class CONNECTION_API Connection
 {
@@ -47,23 +63,6 @@ public:
         }
     };
 
-    class Socket_Error_Exception : public std::exception {
-        virtual const char* what() const throw() {
-            return "Unknown socket error";
-        }
-    };
-
-    class Client_Down_Exception : public std::exception {
-        virtual const char* what() const throw() {
-            return "Client down";
-        }
-    };
-
-    class Bad_Socket_Exception : public std::exception {
-        virtual const char* what() const throw() {
-            return "Bad socket";
-        }
-    };
 private:
     const size_t MESSAGE_BEGIN_SIZE = 5;
     const std::string MESSAGE_BEGIN_CHECK = "BEGIN";
