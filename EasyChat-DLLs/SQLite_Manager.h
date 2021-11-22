@@ -9,14 +9,7 @@
 
 #include "User.h"
 
-#ifdef SQLITE_MANAGER_EXPORTS
-#define SQLITE_MANAGER_API __declspec(dllexport)
-#else
-#define SQLITE_MANAGER_API __declspec(dllexport)
-#endif
-
-
-class SQLITE_MANAGER_API SQLite_Manager : public DB_Driver
+class SQLite_Manager : public DB_Driver
 {
 public:
 	SQLite_Manager(std::string database_file_path);

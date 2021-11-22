@@ -1,4 +1,6 @@
 #include "pch.h"
+
+#define SERVER_EXPORTS
 #include "Server.h"
 
 #include <iostream>

@@ -13,7 +13,7 @@
 #ifdef CLIENT_EXPORTS
 	#define CLIENT_API __declspec(dllexport)
 #else
-	#define CLIENT_API __declspec(dllexport)
+	#define CLIENT_API __declspec(dllimport)
 #endif
 
 class CLIENT_API Server_Down_Exception : public std::exception {

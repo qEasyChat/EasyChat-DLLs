@@ -2,13 +2,7 @@
 #include <string>
 #include <vector>
 
-#ifdef CRYPTO_MANAGER_EXPORTS
-#define CRYPTO_MANAGER_API __declspec(dllexport)
-#else
-#define CRYPTO_MANAGER_API __declspec(dllimport)
-#endif
-
-class CRYPTO_MANAGER_API Crypto_Manager
+class Crypto_Manager
 {
 public:
 	Crypto_Manager();

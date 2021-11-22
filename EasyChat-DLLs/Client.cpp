@@ -1,5 +1,6 @@
 #include "pch.h"
 
+#define CLIENT_EXPORTS
 #include "Client.h"
 
 #include "Crypto_Manager.h"

@@ -1,13 +1,7 @@
 #pragma once
 #include <string>
 
-#ifdef USER_EXPORTS
-#define USER_API __declspec(dllexport)
-#else
-#define USER_API __declspec(dllexport)
-#endif
-
-class USER_API User
+class User
 {
 public:
 	User();

@@ -7,13 +7,7 @@
 #include "DB_Driver.h"
 #include "User.h"
 
-#ifdef SIMPLEINI_MANAGER_EXPORTS
-#define SIMPLEINI_MANAGER_API __declspec(dllexport)
-#else
-#define SIMPLEINI_MANAGER_API __declspec(dllexport)
-#endif
-
-class SIMPLEINI_MANAGER_API SimpleIni_Manager : public DB_Driver
+class SimpleIni_Manager : public DB_Driver
 {
 public:
 	SimpleIni_Manager();

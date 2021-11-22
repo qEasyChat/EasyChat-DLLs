@@ -9,7 +9,6 @@
 #define UTILS_API __declspec(dllimport)
 #endif
 
-
 namespace Utils
 {
 	void UTILS_API memory_error();

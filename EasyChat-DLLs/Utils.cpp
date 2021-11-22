@@ -1,4 +1,6 @@
 #include "pch.h"
+
+#define UTILS_EXPORTS
 #include "Utils.h"
 
 #include <fstream>

@@ -3,7 +3,7 @@
 #ifdef DATABASE_MANAGER_EXPORTS
 #define DATABASE_MANAGER_API __declspec(dllexport)
 #else
-#define DATABASE_MANAGER_API __declspec(dllexport)
+#define DATABASE_MANAGER_API __declspec(dllimport)
 #endif
 
 #include <memory>

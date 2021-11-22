@@ -19,7 +19,7 @@
 #ifdef SERVER_EXPORTS
 #define SERVER_API __declspec(dllexport)
 #else
-#define SERVER_API __declspec(dllexport)
+#define SERVER_API __declspec(dllimport)
 #endif
 
 typedef std::function<void(std::shared_ptr<Connection>)> FunctionType;
@@ -30,7 +30,7 @@ typedef std::function<void(std::shared_ptr<Connection>)> FunctionType;
 
 using pointer_function = void (*)(std::shared_ptr<Connection>);
 
-class Server {
+class SERVER_API Server {
 public:
 	Server();
 	Server(std::string name, size_t port = DEFAULT_PORT);

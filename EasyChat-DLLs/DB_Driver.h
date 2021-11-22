@@ -5,7 +5,7 @@
 #ifdef DB_DRIVER_EXPORTS
 #define DB_DRIVER_API __declspec(dllexport)
 #else
-#define DB_DRIVER_API __declspec(dllexport)
+#define DB_DRIVER_API __declspec(dllimport)
 #endif
 
 

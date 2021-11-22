@@ -7,12 +7,6 @@
 
 #include "Crypto_Manager.h"
 
-#ifdef CONNECTION_EXPORTS
-#define CONNECTION_API __declspec(dllexport)
-#else
-#define CONNECTION_API __declspec(dllimport)
-#endif
-
 #define BUFFER_SIZE 65536
 #define SIZE_BYTES 10
 
@@ -34,7 +28,7 @@ class Socket_Error_Exception : public std::exception {
     }
 };
 
-class CONNECTION_API Connection
+class Connection
 {
 public:
     Connection(int port_number=0, const std::string ip="", const std::string username = "Anon");
