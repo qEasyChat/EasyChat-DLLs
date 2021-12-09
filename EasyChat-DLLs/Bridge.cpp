@@ -1,9 +1,11 @@
 #include "pch.h"
 #include "Bridge.h"
 
-Server* Bridge::new_server(std::string server_name, size_t port)
+Server* Bridge::new_server(const wchar_t* server_name, size_t port)
 {
-	return new Server(server_name, port);
+	std::wstring server_name_ws(server_name);
+	std::string server_name_str(server_name_ws.begin(), server_name_ws.end());
+	return new Server(server_name_str, port);
 }
 
 void Bridge::delete_server(Server* server)

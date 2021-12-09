@@ -10,8 +10,8 @@
 
 namespace Bridge
 {
-	__declspec(dllexport) Server* new_server(std::string server_name, size_t port);
-	__declspec(dllexport) void delete_server(Server* server);
+	extern "C" __declspec(dllexport) Server* new_server(const wchar_t* server_name, size_t port);
+	extern "C" __declspec(dllexport) void delete_server(Server* server);
 
-	__declspec(dllexport) size_t get_driver_type(std::string db_type);
+	extern "C" __declspec(dllexport) size_t get_driver_type(std::string db_type);
 };
