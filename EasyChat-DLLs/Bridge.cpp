@@ -21,13 +21,10 @@ size_t Bridge::get_driver_type(const wchar_t* db_type)
 {
 	std::wstring db_type_ws(db_type);
 	std::string db_type_str(db_type_ws.begin(), db_type_ws.end());
-
-	if (db_type_str == "INI")
-	{
+	if (db_type_str.find("INI") != std::string::npos) {
 		return 0;
 	}
-	if (db_type_str =="SQLite")
-	{
+	if (db_type_str.find("SQLite") != std::string::npos) {
 		return 1;
 	}
 	return -1;

@@ -220,6 +220,26 @@ void Server::connect_to_database(Database_Driver_Type driver_type, std::string i
 	this->db_driver = Database_Manager::get_db_driver(driver_type, ini_file_path);
 }
 
+
+void Server::connect_to_database(const wchar_t* db_type, const wchar_t* file_path)
+{
+	std::wstring db_type_ws(db_type);
+	std::string db_type_str(db_type_ws.begin(), db_type_ws.end());
+	std::wstring file_path_ws(file_path);
+	std::string file_path_str(file_path_ws.begin(), file_path_ws.end());
+	Database_Driver_Type db_driver_type;
+	if (db_type_str == "INI")
+	{
+		db_driver_type = Database_Driver_Type::INI;
+	}
+	if (db_type_str == "SQLite")
+	{
+		db_driver_type = Database_Driver_Type::SQLITE;
+	}
+	this->connect_to_database(db_driver_type, file_path_str);
+
+}
+
 void Server::add_new_user(std::string username, std::string password)
 {
 	std::string password_hash = crypto_manager.get_sha3_512_hash(password);

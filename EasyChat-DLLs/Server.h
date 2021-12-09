@@ -38,7 +38,7 @@ public:
 	void start();
 
 	void connect_to_database(Database_Driver_Type driver_type, std::string ini_file_path);
-	
+	void connect_to_database(const wchar_t* db_type, const wchar_t* file_path);
 private:
 	std::string name;
 
