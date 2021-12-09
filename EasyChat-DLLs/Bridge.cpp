@@ -14,3 +14,18 @@ void Bridge::delete_server(Server* server)
 		server = nullptr;
 	}
 }
+
+
+size_t Bridge::get_driver_type(std::string db_type)
+{
+
+	if (db_type == "INI")
+	{
+		return 0;
+	}
+	if (db_type=="SQLite")
+	{
+		return 1;
+	}
+	return -1;
+}
