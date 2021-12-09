@@ -37,3 +37,21 @@ void Bridge::start_server(Server* server)
 {
 	server->start();
 }
+
+void Bridge::connect_server_to_database(Server* server, const wchar_t* db_type, const wchar_t* file_path)
+{
+	std::wstring db_type_ws(db_type);
+	std::string db_type_str(db_type_ws.begin(), db_type_ws.end());
+	std::wstring file_path_ws(file_path);
+	std::string file_path_str(file_path_ws.begin(), file_path_ws.end());
+	Database_Driver_Type db_driver_type;
+	if (db_type_str == "INI")
+	{
+		db_driver_type = Database_Driver_Type::INI;
+	}
+	if (db_type_str == "SQLite")
+	{
+		db_driver_type = Database_Driver_Type::SQLITE;
+	}
+	server->connect_to_database(db_driver_type, file_path_str);
+}
