@@ -17,7 +17,6 @@ void Bridge::delete_server(Server* server)
 	}
 }
 
-
 size_t Bridge::get_driver_type(const wchar_t* db_type)
 {
 	std::wstring db_type_ws(db_type);
@@ -32,4 +31,9 @@ size_t Bridge::get_driver_type(const wchar_t* db_type)
 		return 1;
 	}
 	return -1;
+}
+
+void Bridge::start_server(Server* server)
+{
+	server->start();
 }
